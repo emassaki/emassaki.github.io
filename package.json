@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https:\/\/username.github.io/app-toot-name",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +19,6 @@
     "styled-components": "^5.2.1",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https:\/\/username.github.io/app-toot-name",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
