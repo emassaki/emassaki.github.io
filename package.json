@@ -18,11 +18,14 @@
     "styled-components": "^5.2.1",
     "web-vitals": "^1.1.1"
   },
+  "homepage": "https:\/\/username.github.io/app-toot-name",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
