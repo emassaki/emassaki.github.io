@@ -11,8 +11,11 @@ const NavBar = () => {
   const { open, setOpen, actualPage } = useContext(Context);
   return (
     <StyledNavBar open={open} page={actualPage}>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+      <div className="page-links">
+        <Link to="/">Home</Link>
+        <Link to="/about">Sobre</Link>
+        <Link to="/skills">Habilidades</Link>
+      </div>
       <div className="social-links">
         <a href="https://github.com/emassaki" target="_blank" rel="noreferrer">
           <SiGithub />

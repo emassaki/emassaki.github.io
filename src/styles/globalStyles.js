@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
+
 import bgImageLandscape from '../images/bg-image-landscape.jpg';
-import bgImagePortrait from '../images/bg-image-portrait.png';
+// import bgImagePortrait from '../images/bg-image-portrait.png';
 
 export const GlobalStyles = createGlobalStyle`
   :root {
@@ -8,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   * {
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,21 +18,17 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-attachment: fixed;
     background-color: #000;
-    background-image: url(${bgImagePortrait});
-    background-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0)), url(${bgImagePortrait});
+    background-image: url(${bgImageLandscape});
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0)), url(${bgImageLandscape});
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100vw;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     body {
-      background-attachment: fixed;
-      background-color: #000;
-      background-image: url(${bgImageLandscape});
-      background-image: linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0)), url(${bgImageLandscape});
+      background-image: linear-gradient(to right, rgba(0,0,0,1) 40%, rgba(0,0,0,0)), url(${bgImageLandscape});
       background-position: right;
-      background-repeat: no-repeat;
       background-size: cover;
     }
   }
@@ -38,34 +36,33 @@ export const GlobalStyles = createGlobalStyle`
 
 export const Main = styled.main`
   color: white;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  margin: 80px auto;
-  width: 70%;
-  border: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.2);
+  margin: 60px auto;
+  width: 80%;
 `;
 
 export const MainHeader = styled.header`
+  background-color: #000;
   display: flex;
   justify-content: flex-end;
-  background-color: #111;
 
   svg {
     color: white;
     font-size: 36px;
-    margin: 24px;
-    height: 26px;
     font-weight: 600;
+    height: 26px;
+    margin: 24px;
   }
 
   @media screen and (min-width: 769px) {
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-between;
 
-    .open-menu,
-    .close-menu {
+    .close-menu,
+    .open-menu {
       display: none;
     }
   }

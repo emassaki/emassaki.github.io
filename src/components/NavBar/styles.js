@@ -16,7 +16,7 @@ export const StyledNavBar = styled.nav`
   z-index: 1;
 
   svg {
-    color: #9f9b9f;
+    color: white;
     cursor: pointer;
     font-size: 36px;
     height: 26px;
@@ -24,13 +24,19 @@ export const StyledNavBar = styled.nav`
     transition: 0.3s;
   }
 
-  a {
-    color: #9f9b9f;
-    display: block;
-    font-size: 25px;
-    padding: 8px;
-    text-decoration: none;
-    transition: 0.3s;
+  .page-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+      color: white;
+      display: block;
+      font-size: 25px;
+      padding: 8px;
+      text-decoration: none;
+      transition: 0.5s;
+    }
   }
 
   a:hover,
@@ -46,30 +52,46 @@ export const StyledNavBar = styled.nav`
 
   .social-links {
     display: flex;
+    margin: 20px;
   }
 
   @media screen and (min-width: 769px) {
     align-items: center;
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     height: auto;
     padding: 5px 10px;
     position: initial;
+    margin: auto;
     transition: 0.5s;
-    width: 100%;
+    width: 80%;
 
-    a {
-      font-size: 1.4rem;
-      margin-left: 10px;
-      padding-left: 10px;
-      text-decoration: none;
-      transition: 0.3s;
+    .page-links {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        font-size: 1.4rem;
+        margin-right: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
     }
 
     .social-links {
       display: flex;
-      position: absolute;
-      right: 30px;
+      margin-right: 50px;
+
+      a {
+        margin: 5px;
+        padding: 0;
+
+        svg {
+          margin: 0;
+        }
+      }
     }
   }
 `;

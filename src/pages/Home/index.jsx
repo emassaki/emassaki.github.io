@@ -1,8 +1,12 @@
 import React, { useContext, useEffect } from 'react';
-import Header from '../../components/MainHeader';
+import { Link } from 'react-router-dom';
+
 import Context from '../../_context/Context';
-import { Main } from '../../styles/globalStyles';
+import Header from '../../components/Header';
 import useHideNavBar from '../../_context/useHideNavBar';
+
+import { Main } from '../../styles/globalStyles';
+import { HomeContent } from './styles';
 
 const Home = () => {
   const { open, setActualPage } = useContext(Context);
@@ -15,8 +19,18 @@ const Home = () => {
 
   return (
     <>
-      <Header>Home</Header>
-      <Main open={open}>Oi</Main>
+      <Header />
+      <Main open={open}>
+        <HomeContent>
+          <h3>Olá! Eu sou </h3>
+          <h1>Eric Massaki Hirayama</h1>
+          <h4>Desenvolvedor Front-End Júnior</h4>
+          <div className="link-buttons">
+            <Link to="/">Meus projetos</Link>
+            <Link to="/">Meus contatos</Link>
+          </div>
+        </HomeContent>
+      </Main>
     </>
   );
 };
