@@ -14,6 +14,7 @@ const Skills = () => {
 
   useEffect(() => {
     setActualPage(3);
+    document.title = 'Portfolio | Habilidades';
   }, [setActualPage]);
 
   const hardSkills = [
@@ -53,6 +54,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
+          <div className="vert-bar"></div>
           <div className="wrapper">
             <h1>Soft Skills *</h1>
             <div>
@@ -62,7 +64,11 @@ const Skills = () => {
             </div>
             <p>
               * Certificado pela{' '}
-              <a href="https://www.linkedin.com/posts/ericmassakihirayama_mapa-de-talentos-tamboro-activity-6779389004916764672-XQ7b">
+              <a
+                href="https://www.linkedin.com/posts/ericmassakihirayama_mapa-de-talentos-tamboro-activity-6779389004916764672-XQ7b"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Tamboro
               </a>
             </p>

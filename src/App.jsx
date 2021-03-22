@@ -5,6 +5,7 @@ import Provider from './_context/Provider';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Home from './pages/Home';
+// import Projects from './pages/Projects';
 
 import { GlobalStyles } from './styles/globalStyles';
 
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/skills" component={Skills} />
+          {/* <Route path="/projects" component={Projects} /> */}
           <Route path="/" exact component={Home} />
         </Switch>
       </Provider>

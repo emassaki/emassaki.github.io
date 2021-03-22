@@ -14,6 +14,7 @@ const About = () => {
 
   useEffect(() => {
     setActualPage(2);
+    document.title = 'Portfolio | Sobre';
   }, [setActualPage]);
 
   return (

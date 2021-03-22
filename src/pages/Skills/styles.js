@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const SkillsContent = styled.div`
   .wrapper {
+    border-left: 1px solid white;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    transition: 0.3s;
+
     h1 {
       font-size: 2.5rem;
       text-align: center;
@@ -44,7 +49,7 @@ export const SkillsContent = styled.div`
   @media screen and (min-width: 769px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .wrapper {
       h1 {
@@ -71,6 +76,10 @@ export const SkillsContent = styled.div`
           color: #f0860c;
           font-weight: 600;
         }
+      }
+
+      &:hover {
+        border-left: 3px solid #f0860c;
       }
     }
   }

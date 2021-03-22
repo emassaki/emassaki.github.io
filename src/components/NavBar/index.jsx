@@ -15,6 +15,7 @@ const NavBar = () => {
         <Link to="/">Home</Link>
         <Link to="/about">Sobre</Link>
         <Link to="/skills">Habilidades</Link>
+        <Link to="/projects">Projetos</Link>
       </div>
       <div className="social-links">
         <a href="https://github.com/emassaki" target="_blank" rel="noreferrer">
