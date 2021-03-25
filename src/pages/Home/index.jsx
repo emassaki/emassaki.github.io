@@ -28,7 +28,7 @@ const Home = () => {
           <h4>Desenvolvedor Front-End Júnior</h4>
           <div className="link-buttons">
             <Link to="/projects">Meus projetos</Link>
-            <Link to="/contact">Meus contatos</Link>
+            <Link to="/skills">Minhas habilidades</Link>
           </div>
         </HomeContent>
       </Main>
