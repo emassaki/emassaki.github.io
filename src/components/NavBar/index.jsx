@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Context from '../../_context/Context';
 import { FiX } from 'react-icons/fi';
@@ -12,11 +12,10 @@ const NavBar = () => {
   return (
     <StyledNavBar open={open} page={actualPage}>
       <div className="page-links">
-        <a href="/">Home</a>
-        <a href="/about">Sobre</a>
-        <a href="/skills">Habilidades</a>
-        <a href="/projects">Projetos</a>
-        <a href='/contacts'>Contato</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">Sobre</Link>
+        <Link to="/skills">Habilidades</Link>
+        <Link to="/projects">Projetos</Link>
       </div>
       <div className="social-links">
         <a href="https://github.com/emassaki" target="_blank" rel="noreferrer">

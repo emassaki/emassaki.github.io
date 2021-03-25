@@ -105,8 +105,8 @@ const Projects = () => {
                     <h1>{summary}</h1>
                     <p>{description}</p>
                     <div className="project-links">
-                      <a href={githubUrl}>Visite o Repositório</a>
-                      <a href={website}>Visite o site</a>
+                      <a href={githubUrl} target="_blank" rel="noreferrer">Visite o Repositório</a>
+                      <a href={website} target="_blank" rel="noreferrer">Visite o site</a>
                     </div>
                   </div>
                   <div className="image-container">
