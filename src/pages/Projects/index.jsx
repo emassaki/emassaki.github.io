@@ -76,7 +76,7 @@ const Projects = () => {
 
   useEffect(() => {
     setActualPage(4);
-    document.title = 'Portfolio | Projetos';
+    document.title = 'Eric Massaki | Portfolio | Projetos';
     const projectsAPI = async () => {
       const response = await axios.get('https://gitconnected.com/v1/portfolio/emassaki');
       if (response && response.status === 200) {

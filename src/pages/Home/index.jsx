@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     setActualPage(1);
-    document.title = 'Portfolio | Home';
+    document.title = 'Eric Massaki | Portfolio | Home';
   }, [setActualPage]);
   
   return (

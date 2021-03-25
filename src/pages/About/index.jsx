@@ -14,7 +14,7 @@ const About = () => {
 
   useEffect(() => {
     setActualPage(2);
-    document.title = 'Portfolio | Sobre';
+    document.title = 'Eric Massaki | Portfolio | Sobre';
   }, [setActualPage]);
 
   return (

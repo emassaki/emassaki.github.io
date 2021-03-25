@@ -7,6 +7,30 @@ import useHideNavBar from '../../_context/useHideNavBar';
 import { Main } from '../../styles/globalStyles';
 import { SkillsContent } from './styles';
 
+const hardSkills = [
+  'HTML',
+  'CSS3',
+  'JavaScript',
+  'Jest',
+  'ReactJS',
+  'RTL',
+  'React-Redux',
+  'React Hooks',
+  'Context API',
+  'Git',
+  'GitHub',
+  'Styled Components',
+];
+
+const softSkills = [
+  'Comunicação Oral',
+  'Organização Financeira',
+  'Resolução de Problemas',
+  'Criatividade',
+  'Tomada de Decisão',
+  'Comunicação Não-Violenta',
+];
+
 const Skills = () => {
   const { open, setActualPage } = useContext(Context);
 
@@ -14,32 +38,8 @@ const Skills = () => {
 
   useEffect(() => {
     setActualPage(3);
-    document.title = 'Portfolio | Habilidades';
+    document.title = 'Eric Massaki | Portfolio | Habilidades';
   }, [setActualPage]);
-
-  const hardSkills = [
-    'HTML',
-    'CSS3',
-    'JavaScript',
-    'Jest',
-    'ReactJS',
-    'RTL',
-    'React-Redux',
-    'React Hooks',
-    'Context API',
-    'Git',
-    'GitHub',
-    'Styled Components',
-  ];
-
-  const softSkills = [
-    'Comunicação Oral',
-    'Organização Financeira',
-    'Resolução de Problemas',
-    'Criatividade',
-    'Tomada de Decisão',
-    'Comunicação Não-Violenta',
-  ];
 
   return (
     <>
