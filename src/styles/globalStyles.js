@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     background-size: 100vw;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     body {
       background-image: linear-gradient(to right, rgba(0,0,0,1) 40%, rgba(0,0,0,0)), url(${bgImageLandscape});
       background-position: right;
@@ -39,7 +39,7 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin: 60px auto;
+  margin: 30px auto;
   width: 80%;
 `;
 
@@ -56,7 +56,7 @@ export const MainHeader = styled.header`
     margin: 24px;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-between;

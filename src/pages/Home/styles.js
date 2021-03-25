@@ -37,7 +37,7 @@ export const HomeContent = styled.div`
     }
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     .link-buttons {
       flex-direction: row;
     }

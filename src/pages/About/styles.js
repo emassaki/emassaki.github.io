@@ -10,7 +10,7 @@ export const AboutContent = styled.div`
     margin-top: 30px;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     p {
       line-height: 2;
       margin-top: 30px;

@@ -46,7 +46,7 @@ export const SkillsContent = styled.div`
     }
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

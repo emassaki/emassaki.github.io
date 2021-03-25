@@ -13,7 +13,7 @@ export const StyledNavBar = styled.nav`
   top: 0;
   transition: 0.5s;
   width: ${(props) => (props.open ? '100%' : '0px')};
-  z-index: 1;
+  z-index: 999;
 
   svg {
     color: white;
@@ -55,7 +55,7 @@ export const StyledNavBar = styled.nav`
     margin: 20px;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
     display: flex;

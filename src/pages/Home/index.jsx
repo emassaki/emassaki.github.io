@@ -17,7 +17,7 @@ const Home = () => {
     setActualPage(1);
     document.title = 'Portfolio | Home';
   }, [setActualPage]);
-
+  
   return (
     <>
       <Header />
@@ -27,8 +27,8 @@ const Home = () => {
           <h1>Eric Massaki Hirayama</h1>
           <h4>Desenvolvedor Front-End Júnior</h4>
           <div className="link-buttons">
-            <Link to="/">Meus projetos</Link>
-            <Link to="/">Meus contatos</Link>
+            <Link to="/projects">Meus projetos</Link>
+            <Link to="/contact">Meus contatos</Link>
           </div>
         </HomeContent>
       </Main>
