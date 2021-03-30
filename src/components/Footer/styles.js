@@ -53,14 +53,15 @@ export const StyledFooter = styled.footer`
 
     .whatsapp {
       align-items: center;
-      color: white;
+      color: #25d366;
       display: flex;
       font-size: 1rem;
+      font-weight: 600;
       position: relative;
 
       .tooltip {
-        background-color: black;
-        border: 3px solid white;
+        background-color: #000;
+        border: 3px solid #25d366;
         border-radius: 5px;
         display: none;
         bottom: 120%;
@@ -72,7 +73,7 @@ export const StyledFooter = styled.footer`
         width: 180px;
 
         &::after {
-          border-color: white transparent transparent transparent;
+          border-color: #25d366 transparent transparent transparent;
           border-style: solid;
           border-width: 10px;
           content: '';
@@ -104,7 +105,7 @@ export const StyledFooter = styled.footer`
           bottom: 10%;
 
           &::after {
-            border-color: transparent white transparent transparent;
+            border-color: transparent #25d366 transparent transparent;
             margin-top: -10px;
             left: auto;
             right: 100%;
