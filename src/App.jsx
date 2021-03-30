@@ -9,6 +9,7 @@ import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 
 import { GlobalStyles } from './styles/globalStyles';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </Provider>
     </>
   );

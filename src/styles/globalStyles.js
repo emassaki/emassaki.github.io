@@ -1,7 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 import bgImageLandscape from '../images/bg-image-landscape.jpg';
-// import bgImagePortrait from '../images/bg-image-portrait.png';
 
 export const GlobalStyles = createGlobalStyle`
   :root {
@@ -23,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100vw;
+    height: 100vh;
   }
 
   @media screen and (min-width: 768px) {
@@ -41,29 +41,4 @@ export const Main = styled.main`
   padding: 20px;
   margin: 30px auto;
   width: 80%;
-`;
-
-export const MainHeader = styled.header`
-  background-color: #000;
-  display: flex;
-  justify-content: flex-end;
-
-  svg {
-    color: white;
-    font-size: 36px;
-    font-weight: 600;
-    height: 26px;
-    margin: 24px;
-  }
-
-  @media screen and (min-width: 768px) {
-    background-color: rgba(0, 0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-
-    .close-menu,
-    .open-menu {
-      display: none;
-    }
-  }
 `;

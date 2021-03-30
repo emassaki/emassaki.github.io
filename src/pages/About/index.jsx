@@ -8,7 +8,7 @@ import { Main } from '../../styles/globalStyles';
 import { AboutContent } from './styles';
 
 const About = () => {
-  const { open, setActualPage } = useContext(Context);
+  const { setActualPage } = useContext(Context);
 
   useHideNavBar();
 
@@ -20,17 +20,22 @@ const About = () => {
   return (
     <>
       <Header />
-      <Main open={open}>
+      <Main>
         <AboutContent>
           <h1>Eric Massaki Hirayama</h1>
           <p>
-            Londrinense, 26 anos, aficcionado por tecnologia e video games. Atualmente
-            estou estudando na Trybe para me tornar um Desenvolvedor Web Full-Stack.
+            Londrinense, 26 anos, aficcionado por tecnologia e video games. Engenheiro
+            Mecânico pela UFSC, resolvi mudar de área e atualmente estou estudando na
+            <a href="https://www.betrybe.com/" target="_blank" rel="noreferrer">
+              {' Trybe '}
+            </a>
+            para me tornar um Desenvolvedor Web Full-Stack.
           </p>
           <p>
-            Em novembro de 2020, eu me voluntariei para ser um dos EmbaixaTrybers da Turma
-            8. Meu trabalho é buscar formas de ajudar meus colegas de turma com dúvidas e
-            problemas propondo projetos e atividades junto à equipe da Trybe.
+            Em novembro de 2020, eu me voluntariei e fui eleito pelos meus colegas para
+            ser um dos EmbaixaTrybers da Turma 8. Meu trabalho é buscar formas de ajudar
+            meus colegas de turma com dúvidas e problemas propondo projetos e atividades
+            junto à equipe da Trybe.
           </p>
           <p>
             Acredito que a colaboração, o comprometimento e o trabalho em equipe são

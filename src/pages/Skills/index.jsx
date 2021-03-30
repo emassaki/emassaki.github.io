@@ -32,7 +32,7 @@ const softSkills = [
 ];
 
 const Skills = () => {
-  const { open, setActualPage } = useContext(Context);
+  const { setActualPage } = useContext(Context);
 
   useHideNavBar();
 
@@ -44,13 +44,13 @@ const Skills = () => {
   return (
     <>
       <Header />
-      <Main open={open}>
+      <Main>
         <SkillsContent>
           <div className="wrapper">
             <h1>Hard Skills</h1>
             <div>
               {hardSkills.map((eachSkill) => (
-                <h3>{eachSkill}</h3>
+                <h3 key={eachSkill}>{eachSkill}</h3>
               ))}
             </div>
           </div>
@@ -59,7 +59,7 @@ const Skills = () => {
             <h1>Soft Skills *</h1>
             <div>
               {softSkills.map((eachSkill) => (
-                <h3>{eachSkill}</h3>
+                <h3 key={eachSkill}>{eachSkill}</h3>
               ))}
             </div>
             <p>

@@ -9,7 +9,7 @@ import { Main } from '../../styles/globalStyles';
 import { HomeContent } from './styles';
 
 const Home = () => {
-  const { open, setActualPage } = useContext(Context);
+  const { setActualPage } = useContext(Context);
 
   useHideNavBar();
 
@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Main open={open}>
+      <Main>
         <HomeContent>
           <h3>Olá! Eu sou </h3>
           <h1>Eric Massaki Hirayama</h1>

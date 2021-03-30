@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Context from './Context';
 
 const Provider = ({ children }) => {
-  const [open, setOpen] = useState('');
+  const [open, setOpen] = useState(false);
   const [actualPage, setActualPage] = useState();
 
   const context = { open, setOpen, actualPage, setActualPage };

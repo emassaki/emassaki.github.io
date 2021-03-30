@@ -52,6 +52,8 @@ export const SkillsContent = styled.div`
     justify-content: space-between;
 
     .wrapper {
+      padding-left: 30px;
+
       h1 {
         text-align: left;
       }
@@ -79,7 +81,7 @@ export const SkillsContent = styled.div`
       }
 
       &:hover {
-        border-left: 3px solid #f0860c;
+        border-left: 5px solid #f0860c;
       }
     }
   }
