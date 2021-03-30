@@ -54,6 +54,7 @@ const carouselProps = {
   showStatus: false,
   showThumbs: false,
   stopOnHover: true,
+  swipeScrollTolerance: 100,
   swipeable: true,
   renderArrowNext: nextArrow,
   renderArrowPrev: prevArrow,

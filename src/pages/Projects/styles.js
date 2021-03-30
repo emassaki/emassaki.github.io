@@ -5,7 +5,7 @@ export const ProjectMain = styled.main`
   display: flex;
   flex-direction: column;
   margin: 0 auto 50px;
-  padding: 60px 30px;
+  padding: 60px 30px 80px;
 
   .title {
     font-size: 2.5rem;

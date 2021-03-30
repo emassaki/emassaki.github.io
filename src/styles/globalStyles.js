@@ -39,6 +39,7 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  padding-bottom: 80px;
   margin: 30px auto;
   width: 80%;
 `;
